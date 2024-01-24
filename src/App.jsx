@@ -16,9 +16,9 @@ function App() {
       <h1>Full Name Display</h1>
       <form onSubmit={submitForm}>
         <label htmlFor='firstName'>First Name:</label>
-        <input id='firstName' required value={firstName} onChange={(e)=>{setFirstName(e.target.value)}}/><br></br>
+        <input type='text' id='firstName' required value={firstName} onChange={(e)=>{setFirstName(e.target.value)}}/><br></br>
         <label htmlFor='lastName'>Last Name:</label>
-        <input id='lastName' required value={lastName} onChange={(e)=>{setLastName(e.target.value)}}/><br></br>
+        <input type='text' id='lastName' required value={lastName} onChange={(e)=>{setLastName(e.target.value)}}/><br></br>
         <button type='submit'>Submit</button>
       </form>
       {fullName!="" && <p>Full Name: {fullName}</p>}
